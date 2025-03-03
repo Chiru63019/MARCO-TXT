@@ -42,14 +42,14 @@ async def account_login(bot: Client, m: Message):
                     InlineKeyboardButton("🐯 𝐅𝐨𝐥𝐥𝐨𝐰 𝐌𝐞 🐯" ,url="https://t.me/+2ibKBT0UBEc5NjQ9") ]                               
             ]))
 
-@bot.on_message(filters.command("ruko"))
+@bot.on_message(filters.command("stop"))
 async def restart_handler(_, m):
     await m.reply_text("**ʀᴜᴋ ɢʏᴀ ꜱɪʀ 😡**", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
 
-@bot.on_message(filters.command(["marco"]))
+@bot.on_message(filters.command(["chiru"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('**और कैसे हो😁.😎 \n\n अब 𝐓𝐗𝐓 𝐟𝐢𝐥𝐞 भेज दो, इंतजार कर ⚡️**')
     input: Message = await bot.listen(editable.chat.id)
@@ -108,7 +108,7 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("**Enter A Captio to add Otherwise send**   **`ＭＡＲＣＯ™`**")
+    await editable.edit("**Enter A Captio to add Otherwise send**   **`🅲🅷🅸🆁🆄`**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
